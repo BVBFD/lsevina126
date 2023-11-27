@@ -339,8 +339,6 @@ footer {
   padding: 0 1vw;
   background: linear-gradient(to left, #ffffff, #fbe084);
   color: #2c281e;
-  position: sticky;
-  bottom: 0;
 }
 
 .profile-footer-call-email-follow {
