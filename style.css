@@ -319,3 +319,68 @@ section .bg-img {
 #project > main > .project-detail button:active {
   transform: scale(0.95);
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1vw;
+  background: linear-gradient(to left, #ffffff, #fbe084);
+  color: #2c281e;
+  position: sticky;
+  bottom: 0;
+}
+
+.profile-footer-call-email-follow {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-name {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.profile-footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vh 1vw;
+  font-weight: bolder;
+}
+
+.profile-footer-call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 1vw;
+}
+
+.profile-footer-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 1vw;
+}
+
+.profile-footer-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 1vw;
+}
+
+.logo-icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+}
+
+.logo-icon i {
+  margin: 5px;
+}
+
+.profile-footer-info {
+  font-size: 1rem;
+  margin-top: 5px;
+}
