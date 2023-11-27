@@ -10,7 +10,8 @@
   width: 100%;
   justify-content: space-between;
   padding: 1rem;
-  background: linear-gradient(to right, #fff9e6, #fad55c);
+  height: 6rem;
+  background: linear-gradient(to right, #ffffff, #fad55c);
   font-size: 1.4rem;
   font-weight: bolder;
   position: sticky;
@@ -23,7 +24,7 @@
 }
 
 .nav-bar > .nav-bar-logo > span {
-  color: #4c4637;
+  color: black;
   font-size: 1.6rem;
 }
 
@@ -33,9 +34,23 @@
   margin-right: 1rem;
 }
 
-.nav-bar > .nav-bar-contents button {
+.nav-bar > .nav-bar-contents {
+  display: flex;
+}
+
+.nav-bar > .nav-bar-contents a {
   width: 10rem;
   height: 3rem;
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-bar > .nav-bar-contents a button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
@@ -43,12 +58,12 @@
   background: #4c4637;
 }
 
-.nav-bar > .nav-bar-contents button:nth-child(2) {
+.nav-bar > .nav-bar-contents a:nth-child(2) {
   margin: 0 1.6rem;
 }
 
 .nav-bar > .nav-bar-contents button:hover {
-  background: #ffde59;
+  background: #ffffff;
   color: #4c4637;
   cursor: pointer;
 }
@@ -56,4 +71,133 @@
 .nav-bar > .nav-bar-contents button:active {
   transform: scale(0.95);
   user-select: none;
+}
+
+#about-me {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  position: relative;
+}
+
+#about-me .bg-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#about-me .profile-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#about-me .profile-box .basic-info-part {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .profile-box .basic-info-part .basic-info h1 {
+  font-size: 2.6rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 0.6rem 0;
+}
+
+#about-me .profile-box .basic-info-part .basic-info h3 {
+  margin: 0.1rem 0;
+  font-size: 1.2rem;
+}
+
+#about-me .profile-box .basic-info-part .basic-info #yellow-line {
+  width: 100%;
+  height: 0.2rem;
+  background: #fad55e;
+  margin: 0.6rem 0 0.4rem 0;
+}
+
+#about-me .profile-box .basic-info-part .profile-img img {
+  width: 20vw;
+  height: 40vh;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+}
+
+#about-me .profile-box .basic-info-part .logo-box {
+  user-select: none;
+}
+
+#about-me .profile-box .basic-info-part .logo-box a {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+#about-me .profile-box .basic-info-part .logo-box a:active i {
+  transform: scale(0.95);
+}
+
+#about-me .profile-box .basic-info-part .logo-box a:nth-child(2) {
+  margin: 0 1rem;
+}
+
+#about-me .profile-box .detail-info-part {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .profile-box .detail-info-part h1 {
+  font-size: 4.5rem;
+  color: #4c4637;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  color: #ffde59;
+  background: #4c4637;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box a {
+  width: 10vw;
+  height: 20vh;
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box a img {
+  width: 10vw;
+  height: 20vh;
+  padding: 1rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box img:hover {
+  transform: scale(0.95);
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box img:active {
+  transform: scale(1);
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box a:nth-child(2) {
+  margin: 0 5vw;
+}
+
+#about-me .profile-box .detail-info-part .career-logo-box a:nth-child(2) img {
+  margin: 6vh 0;
 }
