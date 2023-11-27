@@ -16,6 +16,7 @@
   font-weight: bolder;
   position: sticky;
   top: 0;
+  z-index: 99999999;
 }
 
 .nav-bar > .nav-bar-logo {
@@ -73,13 +74,11 @@
   user-select: none;
 }
 
-#about-me {
-  width: 100%;
-  height: calc(100vh - 6rem);
+section {
   position: relative;
 }
 
-#about-me .bg-img {
+section .bg-img {
   width: 100%;
   height: 100%;
   opacity: 0.15;
@@ -89,6 +88,11 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#about-me {
+  width: 100%;
+  height: calc(100vh - 6rem);
 }
 
 #about-me .profile-box {
@@ -200,4 +204,118 @@
 
 #about-me .profile-box .detail-info-part .career-logo-box a:nth-child(2) img {
   margin: 6vh 0;
+}
+
+#project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+}
+
+#project > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2.5rem;
+  font-size: 3rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  border: none;
+  color: #ffde59;
+  background: #4c4637;
+}
+
+#project .introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.4rem 0;
+}
+
+#project .introduce h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#project .introduce p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#project .introduce p span {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #ffde59;
+  background: #4c4637;
+  line-height: 3.2rem;
+  border-radius: 0.4rem;
+  margin-right: 0.4rem;
+  padding: 0 0.4rem;
+}
+
+#project > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project > main > .project-detail {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 30vh;
+}
+
+#project > main > .project-detail:nth-child(2) {
+  margin: 0 5vw;
+}
+
+#project > main > .project-detail > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+}
+
+#project > main > .project-detail > a > img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+#project > main > .project-detail > h1 {
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+#project > main > .project-detail button {
+  font-size: 1.2rem;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  background: #4c4637;
+  color: white;
+  cursor: pointer;
+}
+
+#project > main > .project-detail button:hover {
+  color: #4c4637;
+  background: white;
+  font-weight: bolder;
+}
+
+#project > main > .project-detail button:active {
+  transform: scale(0.95);
 }
